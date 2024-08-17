@@ -98,3 +98,8 @@ python make_gif.py --env-id Ant-v2 --weight "./logs/Ant-v2/.../actor.pth" --algo
 ```
 
 This will generate `./figs/<env_id>/actor_0.gif`, which shows the performance of the agent.
+
+
+## Acknowledgements
+
+Our codebase is based on the implementation of [CAIL](https://github.com/Stanford-ILIAD/Confidence-Aware-Imitation-Learning).
