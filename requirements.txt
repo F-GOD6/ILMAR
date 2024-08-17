@@ -1,0 +1,10 @@
+gym==0.26.2
+gymnasium==0.29.1
+imageio==2.34.2
+mujoco_py==2.1.2.14
+numpy==1.24.1
+pandas==2.0.3
+rl_plotter==2.4.0
+tensorboard==2.14.0
+torch==2.1.1+cu121
+tqdm==4.66.4
