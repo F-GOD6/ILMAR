@@ -1,0 +1,27 @@
+# Hyper-params for training imitation learning algorithms
+imitation:
+all:
+    num_steps: 1000000
+    eval_interval: 10000
+    lr_actor: 3e-4
+    lr_critic: 3e-4
+    grad_reg_coef : 0.2
+    alpha: 1
+    beta: 1
+    phi: 1
+  Ant-v2:
+    env_id: Ant-v2
+    buffer_exp: "./buffers_100/Ant-v2/size1000_reward4791.9.pth"
+    buffer: "./buffers_100/Ant-v2/size500000_reward_2060.1_2862.87_3641.36_4755.81_793.44.pth"
+  Hopper-v2:
+    env_id: Hopper-v2
+    buffer_exp: "./buffers_100/Hopper-v2/size1000_reward3637.46.pth"
+    buffer: "./buffers_100/Hopper-v2/size500000_reward_1918.29_2789.23_3244.98_3635.33_560.29.pth"
+  Humanoid-v2:
+    env_id: Humanoid-v2
+    buffer_exp: "./buffers_100/Humanoid-v2/size1000_reward7006.71.pth"
+    buffer: "./buffers_100/Humanoid-v2/size500000_reward_2843.49_4327.42_5328.98_5845.06_6845.13.pth"
+  Walker2d-v2:
+    env_id: Walker2d-v2
+    buffer_exp: "./buffers_100/Walker2d-v2/size1000_reward4299.35.pth"
+    buffer: "./buffers_100/Walker2d-v2/size500000_reward_1418.52_2900.46_3065.32_3703.35_772.6.pth"

@@ -64,7 +64,7 @@ You can train IL using the following line:
 
 
 ```bash
-python train_imitation.py --algo ilamr --env-id Ant-v2 --buffer_exp ".//home/fanjiangdong/workspace/The_second_idea/buffers_100/Ant-v2/size1000_reward4791.9.pth" --buffer_union "./home/fanjiangdong/workspace/The_second_idea/buffers_100/Ant-v2/size500000_reward_2060.1_2862.87_3641.36_4755.81_793.44.pth" --seed 2026
+python train_imitation.py --algo ilamr --env-id Ant-v2 --buffer_exp "./buffers_100/Ant-v2/size1000_reward4791.9.pth" --buffer_union "./buffers_100/Ant-v2/size500000_reward_2060.1_2862.87_3641.36_4755.81_793.44.pth" --seed 2026
 python train_imitation.py --algo ilamr --env-id Hopper-v2 --buffer_exp "./buffers_100/Hopper-v2/size1000_reward3637.46.pth" --buffer_union "./buffers_100/Hopper-v2/size500000_reward_1918.29_2789.23_3244.98_3635.33_560.29.pth" --seed 2024
 python train_imitation.py --algo ilamr --env-id Humanoid-v2 --buffer_exp "./buffers_100/Humanoid-v2/size1000_reward7006.71.pth" --buffer_union "./buffers_100/Humanoid-v2/size500000_reward_2843.49_4327.42_5328.98_5845.06_6845.13.pth" --seed 2022
 python train_imitation.py --algo ilamr --env-id Walker2d-v2 --buffer_exp "./buffers_100/Walker2d-v2/size1000_reward4299.35.pth" --buffer_union "./buffers_100/Walker2d-v2/size500000_reward_1418.52_2900.46_3065.32_3703.35_772.6.pth" --seed 2024
