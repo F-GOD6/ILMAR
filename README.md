@@ -15,12 +15,12 @@ For example, you can use the following line to train an expert:
 
 ```bash
 python train_expert.py --env-id Ant-v2 --algo ppo --num-steps 10000000 --eval-interval 100000 --rollout 10000 --seed 0
-```
+
 python train_expert.py --env-id Walker2d-v2 --algo ppo --num-steps 20000000 --eval-interval 100000 --rollout 10000 --seed 0
 python train_expert.py --env-id Hopper-v2 --algo ppo --num-steps 30000000 --eval-interval 100000 --rollout 10000 --seed 0
 
 python train_expert.py --env-id Humanoid-v2 --algo sac --num-steps 20000000 --eval-interval 100000 --rollout 1000000 --seed 0
-
+```
 
 After training, the logs will be saved in folder `./logs/<env_id>/<algo>/seed<seed>-<training time>/`. The folder contains `summary` to track the process of training, and `model` to save the models.
 
@@ -51,6 +51,9 @@ After collecting, the demonstrations will be saved in the`./buffers/Raw/<env_id>
 
 You can create a mixture of demonstrations using the collected demonstrations in the previous step. Use the following command to mix the demonstrations.
 Note don't mix the expert with others if you use a same random seed, the first trajectory when you use expert policy collect demonstrations is this.
+
+
+```bash
 python mix_demo.py --env-id Humanoid-v2 --folder "./buffers/Raw100/Humanoid-v2"
 ```
 
@@ -68,7 +71,7 @@ python train_imitation.py --algo ilamr --env-id Ant-v2 --buffer_exp "./buffers_1
 python train_imitation.py --algo ilamr --env-id Hopper-v2 --buffer_exp "./buffers_100/Hopper-v2/size1000_reward3637.46.pth" --buffer_union "./buffers_100/Hopper-v2/size500000_reward_1918.29_2789.23_3244.98_3635.33_560.29.pth" --seed 2024
 python train_imitation.py --algo ilamr --env-id Humanoid-v2 --buffer_exp "./buffers_100/Humanoid-v2/size1000_reward7006.71.pth" --buffer_union "./buffers_100/Humanoid-v2/size500000_reward_2843.49_4327.42_5328.98_5845.06_6845.13.pth" --seed 2022
 python train_imitation.py --algo ilamr --env-id Walker2d-v2 --buffer_exp "./buffers_100/Walker2d-v2/size1000_reward4299.35.pth" --buffer_union "./buffers_100/Walker2d-v2/size500000_reward_1418.52_2900.46_3065.32_3703.35_772.6.pth" --seed 2024
-
+```
 ### Evaluation
 
 If you want to evaluate an agent, use the following line:
