@@ -9,7 +9,7 @@ To train an expert or an Imitation Learning algorithm that reproduces the result
 
 ### Train experts
 
-To train experts, we provide algorithms including Proximal Policy Optimization (PPO) [[5]](#references) and Soft Actor-Critic (SAC) [[6]](#references). Also, we provide some well-trained experts' weights in the `./weights` folder. The file name means the number of steps the expert is trained. 
+To train experts, we provide algorithms including Proximal Policy Optimization (PPO)  and Soft Actor-Critic (SAC)s. Also, we provide some well-trained experts' weights in the `./weights` folder. The file name means the number of steps the expert is trained. 
 
 For example, you can use the following line to train an expert:
 
