@@ -2,7 +2,15 @@
 # Imitation Learning from Suboptimal Demonstrations via Meta-Learning an Action Ranker
 
 ## Dependencies
+To install requirements:
 
+```bash
+conda create -n cail python=3.8
+conda activate ilmar
+pip install -r requirements.txt
+```
+Note that you need to install [MuJoCo](http://www.mujoco.org/) on your device first. Please follow the instructions in [mujoco-py](https://github.com/openai/mujoco-py
+) for help.
 ### Hyper-parameters
 
 To train an expert or an Imitation Learning algorithm that reproduces the results, you can use the hyper-parameters we provided in ` ./hyperparam.yaml`.
@@ -102,4 +110,5 @@ This will generate `./figs/<env_id>/actor_0.gif`, which shows the performance of
 
 ## Acknowledgements
 
-Our codebase is based on the implementation of [CAIL](https://github.com/Stanford-ILIAD/Confidence-Aware-Imitation-Learning).
+Our codebase is based on the implementation of [CAIL](https://github.com/Stanford-ILIAD/Confidence-Aware-Imitation-Learning) and [MAML](https://github.com/dragen1860/MAML-Pytorch).
+DemoDICE and ISW-BC is based on the implementation of [ISWBC](https://github.com/liziniu/ISWBC) and [DemoDICE](https://github.com/KAIST-AILab/imitation-dice).
